@@ -32,6 +32,14 @@
     <h1>Yes.</h1>
     <h2 aria-label="Table flip emoji" aria-hidden="true">(╯°□°）╯︵ ┻━┻</h2>
 
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/service-worker.js");
+        });
+      }
+    </script>
+
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-67801404-4"
