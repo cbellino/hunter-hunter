@@ -1,58 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Is Hunter × Hunter on hiatus?</title>
-    <meta
-      name="description"
-      content="A simple page to check if Hunter × Hunter is on hiatus and get notified when it’s out."
-    />
-    <meta name="theme-color" content="#ffffff" />
-    <link rel="manifest" href="manifest.json" />
-    <style>
-      body {
-        margin: 0;
-        padding: 2em;
-      }
 
-      h1 {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: rgba(0, 0, 0, 0.9);
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Is Hunter × Hunter on hiatus?</title>
+  <meta name="description"
+    content="A simple page to check if Hunter × Hunter is on hiatus and get notified when it’s out." />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="manifest" href="manifest.json" />
+  <style>
+    body {
+      margin: 0;
+      padding: 2em;
+    }
 
-      h2 {
-        color: rgba(0, 0, 0, 0.7);
-      }
-    </style>
-  </head>
+    h1,
+    h2 {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: rgba(0, 0, 0, 0.9);
+    }
 
-  <body>
-    <h1>Yes.</h1>
-    <h2 aria-label="Table flip emoji" aria-hidden="true">(╯°□°）╯︵ ┻━┻</h2>
+    h1 {
+      margin-bottom: 48px;
+    }
 
-    <script>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => {
-          navigator.serviceWorker.register("/service-worker.js");
-        });
-      }
-    </script>
+    h2 {
+      display: inline;
+    }
 
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-67801404-4"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
+    h3 {
+      display: inline;
+      padding-left: 8px;
+      color: rgba(0, 0, 0, 0.65);
+    }
+  </style>
+</head>
 
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+<body>
+  <h1>Is Hunter × Hunter on hiatus?</h1>
+  <h2>Yes.</h2>
+  <h3 aria-label="Table flip emoji">(╯°□°）╯︵ ┻━┻</h3>
 
-      gtag("config", "UA-67801404-4");
-    </script>
-  </body>
+  <script>
+    if (" serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("/service-worker.js");
+      });
+    }
+  </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-67801404-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-67801404-4");
+  </script>
+</body>
+
 </html>
